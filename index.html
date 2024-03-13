@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" href="assets/DrumApp.png" type="image/png" />
+    <link rel="shortcut icon" href="assets/DrumApp.png" type="image/png" />
+    <title>Drum Kit</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="assets/css/main.css" />
+  </head>
+  <body>
+    <nav class="navBar">
+      <h1>
+        <a class="drumpadd-title" href="index.html">BEATMAKER</a>
+      </h1>
+      <div class="menu-toggle" id="mobile-menu">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+      <ul class="nav-list">
+        <li><a href="">House</a></li>
+        <li><a href="">Techno</a></li>
+        <li><a href="">Hip Hop</a></li>
+        <li><a href="">Rock</a></li>
+      </ul>
+    </nav>
+
+    <container>
+      <div class="knobs-container">
+        <input
+          type="range"
+          name=""
+          id="slider"
+          class="slider"
+          value="0"
+          min="0"
+          max="100"
+        />
+        <input
+          type="range"
+          name=""
+          id="slider2"
+          class="slider"
+          value="0"
+          min="0"
+          max="100"
+        />
+        <input
+          type="range"
+          name=""
+          id="slider3"
+          class="slider"
+          value="0"
+          min="0"
+          max="100"
+        />
+        <input
+          type="range"
+          name=""
+          id="slider4"
+          class="slider"
+          value="0"
+          min="0"
+          max="100"
+        />
+      </div>
+
+      <section class="small-padTable">
+        <button
+          class="small-pad"
+          id="soundBass01Button"
+          onclick="soundBass01()"
+        ></button>
+        <button class="small-pad" onclick="soundBass02()"></button>
+        <button class="small-pad" onclick="soundAmbient01()"></button>
+        <button class="small-pad" onclick="soundAmbient02()"></button>
+      </section>
+
+      <input
+        type="range"
+        name=""
+        id="sliderDrums"
+        class="sliderDrums"
+        value="0"
+        min="0"
+        max="100"
+      />
+      <section class="padTable">
+        <button class="pad" onclick="soundKick00()"></button>
+        <button class="pad" onclick="soundKick01()"></button>
+        <button class="pad" onclick="soundKick02()"></button>
+        <button class="pad" onclick="soundSnare01()"></button>
+        <button class="pad" onclick="soundSnare02()"></button>
+        <button class="pad" onclick="soundClap()"></button>
+        <button class="pad" onclick="soundHiHat()"></button>
+        <button class="pad" onclick="soundHiHatClosed()"></button>
+        <button class="pad" onclick="soundSplash01()"></button>
+        <button class="pad" onclick="soundSplash02()"></button>
+        <button class="pad" onclick="soundRide()"></button>
+        <button class="pad" onclick="soundTom()"></button>
+      </section>
+    </container>
+    <footer class="footer-style">
+      <a
+        class="footer-name"
+        target="_blank"
+        href="https://www.linkedin.com/in/vlad-puentesb/"
+        >Vlad Beltran Puentes - Front End Developer</a
+      >
+      <p>Europe - 2024</p>
+    </footer>
+
+    <script src="assets/js/main.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  </body>
+</html>
